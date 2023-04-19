@@ -254,7 +254,7 @@
     <Compile Include="Models\Programs.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\RecognitionWorker.cs" />
+    <Compile Include="Services\RecognitionService.cs" />
     <Compile Include="Tasks\Interfaces\IRecognitionTask.cs" />
     <Compile Include="Tasks\MusicTask.cs" />
     <Compile Include="Tasks\NoteTask.cs" />
@@ -268,6 +268,19 @@
     <None Include="programs.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="vosk-model-small-ru-0.22\am\final.mdl" />
+    <None Include="vosk-model-small-ru-0.22\conf\mfcc.conf" />
+    <None Include="vosk-model-small-ru-0.22\conf\model.conf" />
+    <None Include="vosk-model-small-ru-0.22\graph\disambig_tid.int" />
+    <None Include="vosk-model-small-ru-0.22\graph\Gr.fst" />
+    <None Include="vosk-model-small-ru-0.22\graph\HCLr.fst" />
+    <None Include="vosk-model-small-ru-0.22\graph\phones\word_boundary.int" />
+    <None Include="vosk-model-small-ru-0.22\ivector\final.dubm" />
+    <None Include="vosk-model-small-ru-0.22\ivector\final.ie" />
+    <None Include="vosk-model-small-ru-0.22\ivector\final.mat" />
+    <None Include="vosk-model-small-ru-0.22\ivector\global_cmvn.stats" />
+    <None Include="vosk-model-small-ru-0.22\ivector\online_cmvn.conf" />
+    <None Include="vosk-model-small-ru-0.22\ivector\splice.conf" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Vosk.0.3.38\build\Vosk.targets" Condition="Exists('..\packages\Vosk.0.3.38\build\Vosk.targets')" />
